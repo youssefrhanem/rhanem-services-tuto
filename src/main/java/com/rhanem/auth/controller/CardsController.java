@@ -1,2 +1,16 @@
-package com.rhanem.auth.controller;public class CardsController {
+package com.rhanem.auth.controller;
+
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CardsController {
+
+    @GetMapping("myCards")
+    public String getCardsDetails(){
+        return "hello";
+    }
+
+
 }
